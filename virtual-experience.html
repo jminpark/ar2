@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <title>LG Electronics Sample</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no"/>
+  <!--[if IE]><script type="text/javascript" src="js/ie.js"></script><![endif]-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
+  <!--lib-->
+  <link rel="stylesheet" type="text/css" href="css/lib/jquery.mCustomScrollbar.css"/>
+  <script type="text/javascript" src="js/lib/jquery.mCustomScrollbar.js"></script>
+  <!--custom-->
+  <link rel="stylesheet" type="text/css" href="css/index.css" />
+  <script type="text/javascript" src="js/index.js"></script>
+
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+
+  <!--3D Model Viewer > 샘플 확인을 위해 넣어둔 것이니, 필요치 않으면 삭제하셔도 됩니다. 
+      // 🚨 REQUIRED: Web Components polyfill to support Edge and Firefox < 63
+      <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script>
+      // 💁 OPTIONAL: Intersection Observer polyfill for better performance in Safari and IE11 
+      <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>  
+      // 💁 OPTIONAL: Resize Observer polyfill improves resize behavior in non-Chrome browsers 
+      <script src="https://unpkg.com/resize-observer-polyfill@1.5.0/dist/ResizeObserver.js"></script> -->
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <h1 class="logo">
+        <a href="index.html">
+          <img src="img/logo.png" alt="LG Digital Show Room"/>
+        </a>
+      </h1>
+    </header>    
+    <div class="container-wrap needsclick">
+      <div class="container">
+        <section class="video-list-detail">
+          <h3 class="sr-only">제품 상세</h3>
+          <div class="preview">
+            <div class="model-viewer-wrap">
+              <!-- 저희 glb 파일을 넣을 경우 web에서 보여지지 않아서 샘플을 대신 넣어뒀습니다.  
+                <model-viewer src="https://cdn.glitch.com/36cb8393-65c6-408d-a538-055ada20431b/Astronaut.glb?1542147958948" alt="A 3D model of an astronaut" auto-rotate camera-controls data-js-focus-visible ar-status="not-presenting"></model-viewer>
+              -->
+              <model-viewer ar camera-controls alt="washer" src="img/washer_rotated_scaled.glb"></model-viewer>
+                            <!-- alt="A 3D model of an astronaut"
+                            background-color="#f7f7f7"
+                            shadow-intensity="1" 
+                            camera-controls ar -->
+            </div>
+            <div class="text-wrap">
+              <span class="sort">Clean & Minimal</span>
+              <span class="tit">Washer & Dryer</span>
+              <span class="desc">From everyday wear to your finest garments. Spotless and flawless care.</span>
+              <button class="btn more" type="button" onclick="location.href='index.html'">More Projects in AR</button>
+            </div>
+          </div>
+        </section>
+      </div><!--//.container-->
+      <footer class="footer">
+        <p class="copy">Copyright &copy; 2020 LG Electronics. All Rights Reserved.</p>      
+      </footer>
+    </div><!--//.container-wrap-->
+  </div>
+
+  <!-- Loads <model-viewer> for modern browsers: 
+  <script type="module"
+      src="https://unpkg.com/@google/model-viewer@v0.3.1/dist/model-viewer.js">
+  </script>
+  // Loads <model-viewer> for old browsers like IE11:
+  <script nomodule
+      src="https://unpkg.com/@google/model-viewer@v0.3.1/dist/model-viewer-legacy.js">
+  </script> -->
+
+</body>
+</html>

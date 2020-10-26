@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <title>LG Electronics Sample</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no"/>
+  <!--[if IE]><script type="text/javascript" src="js/ie.js"></script><![endif]-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
+  <!--lib-->
+  <link rel="stylesheet" type="text/css" href="css/lib/jquery.mCustomScrollbar.css"/>
+  <script type="text/javascript" src="js/lib/jquery.mCustomScrollbar.js"></script>
+  <link rel="stylesheet" href="css/lib/swiper.css">
+  <script type="text/javascript" src="js/lib/swiper.min.js"></script>
+  <!--custom-->
+  <link rel="stylesheet" type="text/css" href="css/index.css" />
+  <script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <h1 class="logo">
+        <a href="index.html">
+          <img src="img/logo.png" alt="LG Digital Show Room"/>
+        </a>
+      </h1>
+    </header>    
+    <div class="container-wrap needsclick">
+      <div class="container wide">
+        <section class="product-detail">
+          <h3 class="sr-only">제품 상세</h3>
+          <div class="images-swiper">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide"><img src="img/product-sample.png" alt="Product Sample"></li>
+              <li class="swiper-slide"><img src="img/product-sample-02.png" alt="Product Sample"></li>
+              <li class="swiper-slide"><img src="img/product-sample-03.png" alt="Product Sample"></li>
+            </ul>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <script>
+              var swiper = new Swiper('.images-swiper', {
+                slidesPerView: 1,
+                centeredSlides: false,
+                grabCursor: true,
+                loop: true,
+                pagination: {
+                  el: '.swiper-pagination',
+                  clickable: true,
+                },
+                navigation: {
+                  nextEl: '.swiper-button-next',
+                  prevEl: '.swiper-button-prev',
+                },
+              });
+            </script>
+          </div>
+          <div class="detail">
+            <h4>모델명 : <strong>F24WDD</strong></h4>
+            <h4 class="tit">주요 특장점</h4>
+            <p class="desc">인공지능 맞춤 세탁 | 국내 최초 / 최대 세탁용량 | 스마트한 세탁 | 건강세탁 시스템</p>
+            <div class="spec-wrap">
+              <h5>기본사양</h5>
+              <ul>
+                <li>
+                  <span>세탁 용량</span>
+                  <span>24kg</span>
+                </li>
+                <li>
+                  <span>색상</span>
+                  <span>화이트</span>
+                </li>
+                <li>
+                  <span>크기 <small>(WxHxD)</small></span>
+                  <span>700 x 990 x 830mm</span>               
+                </li>
+                <li>
+                  <span>도어 열림 시 크기 <small>(WxHxD)</small></span>
+                  <span>700 x 990 x 1,406mm</span>
+                </li>
+              </ul>
+            </div>
+            <div class="spec-wrap">
+              <h5>주요 기능</h5>
+              <ul>
+                <li>
+                  <span>AI DD <small>(무게, 의류 재질 감지)</small></span>
+                  <span>O</span>
+                </li>
+                <li>
+                  <span>트루스팀</span>
+                  <span>O</span>
+                </li>
+                <li>
+                  <span>인버터 DD모터</span>
+                  <span>O</span>             
+                </li>
+                <li>
+                  <span>6모션</span>
+                  <span>O</span>
+                </li>
+                <li>
+                  <span>5방향 터보샷</span>
+                  <span>O</span>
+                </li>
+              </ul>
+            </div>
+            <div class="spec-wrap">
+              <h5>세탁 코스</h5>
+              <ul>
+                <li>
+                  <span>세탁전용</span>
+                  <span>표준, 찌든때, 아기옷, 알뜰삶음, 기능성의류, 알러지케어, 스팀리프레쉬, 스피드워시, 조용조용, 컬러케어, 이불, 란제리/울, 헹굼+탈수</span>
+                </li>
+                <li>
+                  <span>다운로드코스</span>
+                  <span>O  소량 세탁, 스킨 케어, 장마철 세탁, 땀얼룩 제거, 한벌 세탁, 키즈옷, 와이셔츠, 교복, 정전기 제거, 탈수 전용, 냄새 제거, 옷감 보호, 안심 헹굼, 찬물세탁</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section><!--//.product-detail-->
+        <section class="link-list-wrap">
+          <ul class="link-list">
+            <li class="type-a">
+              <a href="javascript:openModal('modalTypeA');" class="button modal-open">
+                <h4 class="tit">Video <br/>Preview</h4>
+              </a>
+            </li>
+            <li class="type-b">
+              <a href="virtual-experience.html">
+                <h4 class="tit">Virtual <br/>Experience</h4>
+                <img src="img/bg-brand2.jpg" alt="..."/>
+              </a>
+            </li>
+            <li class="type-c">
+              <a href="javascript:openModal('modalTypeB');" class="button modal-open">
+                <h4 class="tit">Interactive <br/>Shopping</h4>
+                <img src="img/bg-brand4.jpg" alt="..."/>
+              </a>
+            </li>
+            <li class="type-d">
+              <a href="https://www.lgbestshopmall.co.kr/BestMall/Home/Index">
+                <h4 class="tit">Online <br/>Shopping</h4>
+                <img src="img/bg-brand1.jpg" alt="..."/>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div><!--//.container-->
+      <footer class="footer">
+        <p class="copy">Copyright &copy; 2020 LG Electronics. All Rights Reserved.</p>      
+      </footer>
+    </div><!--//.container-wrap-->
+
+    <!-- Modal TypeA -->
+    <div id="modalTypeA" class="modal">
+      <div class="modal-content-wrap">
+        <div class="modal-content">
+          <button type="button" class="btn-close white"><span>Close</span></button>
+          <iframe src="https://www.youtube.com/embed/6XcGCN-1Pvs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <!-- Modal TypeB -->
+    <div id="modalTypeB" class="modal">
+      <div class="modal-content-wrap">
+        <div class="modal-content">
+          <button type="button" class="btn-close"><span>Close</span></button>
+          <p>영상통화 구현 예정입니다.</p>
+        </div>
+      </div>
+    </div>
+    <script>
+      function openModal(modalname){
+          document.get
+          $("#"+modalname).fadeIn(300);
+      }        
+      $(".modal .btn-close").on('click',function(){
+          $(".modal").fadeOut(300);
+      });
+    </script>
+  </div>
+</body>
+</html>
